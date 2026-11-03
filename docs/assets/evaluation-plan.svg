@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="700" viewBox="0 0 960 700" role="img" aria-labelledby="title desc">
+  <title id="title">운영진의 실제 사용에서 개선까지</title>
+  <desc id="desc">5~10개 모임 모집을 목표로 기존 방식과 모임 규모를 조사한 후 실제 활동에서 사용하고 운영진 설문을 받아 반복된 불편과 오류를 개선한다. 5점 척도와 자유응답으로 편의성, 운영 부담, 지속 사용 의향을 평가한다. 시간 측정은 제외하고 실제 모임 수와 응답자 수를 보고한다.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#087f79" stroke-width="1.5"/></marker></defs>
+  <rect width="960" height="700" rx="24" fill="#f5f8f8"/>
+  <g font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+    <text x="40" y="48" font-size="17" font-weight="700" fill="#087f79">03 / EVALUATION PLAN</text>
+    <text x="40" y="94" font-size="32" font-weight="700" fill="#173640">실제 사용에서 운영진 평가, 그리고 개선</text>
+    <text x="40" y="129" font-size="20" fill="#526771">모집 목표안 5~10개 모임 · 실제 참여 모임 수와 응답자 수를 함께 기록</text>
+    <g fill="#ffffff" stroke="#c5d9d7" stroke-width="2">
+      <rect x="40" y="174" width="410" height="141" rx="14"/><rect x="510" y="174" width="410" height="141" rx="14"/>
+      <rect x="510" y="371" width="410" height="141" rx="14"/><rect x="40" y="371" width="410" height="141" rx="14" fill="#e3f3ef"/>
+    </g>
+    <g font-size="18" fill="#087f79" font-weight="700"><text x="64" y="208">01 / 사용 전</text><text x="534" y="208">02 / 실제 사용</text><text x="534" y="405">03 / 사용 후</text><text x="64" y="405">04 / 개선</text></g>
+    <g font-size="26" font-weight="700" fill="#173640"><text x="64" y="250">기존 관리 방식 조사</text><text x="534" y="250">활동에서 신청·출석 처리</text><text x="534" y="447">운영 업무를 맡은 임원 설문</text><text x="64" y="447">반복된 불편과 오류 수정</text></g>
+    <g font-size="20" fill="#526771"><text x="64" y="286">모임 규모 · 사용 도구 · 관리 흐름</text><text x="534" y="286">회원 신청부터 운영진 출석 확인까지</text><text x="534" y="483">5점 척도 + 자유응답</text><text x="64" y="483">핵심 흐름에 관련된 문제부터 반영</text></g>
+    <g fill="none" stroke="#087f79" stroke-width="2.5" marker-end="url(#arrow)"><path d="M460 245H496"/><path d="M715 325V357"/><path d="M500 442H464"/></g>
+    <rect x="40" y="548" width="880" height="116" rx="14" fill="#173640"/>
+    <text x="64" y="584" font-size="19" fill="#b6ddd7">기존 방식과 비교할 핵심 지표</text>
+    <text x="64" y="625" font-size="25" font-weight="700" fill="#ffffff">편의성 · 운영 부담 · 지속 사용 의향</text>
+    <text x="741" y="625" font-size="19" fill="#d4ebe7">시간 측정 제외</text>
+  </g>
+</svg>

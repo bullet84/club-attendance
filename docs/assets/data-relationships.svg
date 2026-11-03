@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="760" viewBox="0 0 960 760" role="img" aria-labelledby="title desc">
+  <title id="title">모임을 기준으로 연결하는 네 테이블</title>
+  <desc id="desc">Group과 Member, Group과 Activity, Member와 Participation, Activity와 Participation은 각각 일대다 관계다. 회원과 활동은 같은 모임에 속해야 하며 member_id와 activity_id 조합의 중복 신청을 막는다. 개념 설계이며 상세 제약조건은 설계 예정이다.</desc>
+  <rect width="960" height="760" rx="24" fill="#f5f8f8"/>
+  <g font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+    <text x="40" y="48" font-size="17" font-weight="700" fill="#087f79">02 / DATA MODEL</text>
+    <text x="40" y="94" font-size="32" font-weight="700" fill="#173640">모임을 기준으로, 참가 기록으로 연결</text>
+    <text x="40" y="129" font-size="20" fill="#526771">개념 설계안 · 1은 하나, N은 여러 개의 연결을 의미합니다.</text>
+    <g fill="none" stroke="#087f79" stroke-width="3"><path d="M400 260H560"/><path d="M220 350V420"/><path d="M740 350V420"/><path d="M400 510H560"/></g>
+    <g font-size="21" font-weight="700" fill="#087f79" text-anchor="middle">
+      <text x="427" y="246">1</text><text x="533" y="246">N</text>
+      <text x="245" y="376">1</text><text x="245" y="409">N</text>
+      <text x="765" y="376">1</text><text x="765" y="409">N</text>
+      <text x="427" y="496">1</text><text x="533" y="496">N</text>
+    </g>
+    <g stroke="#c5d9d7" stroke-width="2" fill="#ffffff">
+      <rect x="40" y="175" width="360" height="175" rx="14"/><rect x="560" y="175" width="360" height="175" rx="14"/>
+      <rect x="40" y="420" width="360" height="185" rx="14"/><rect x="560" y="420" width="360" height="185" rx="14" fill="#e3f3ef"/>
+    </g>
+    <g font-size="27" font-weight="700" fill="#173640">
+      <text x="64" y="219">Group</text><text x="584" y="219">Member</text>
+      <text x="64" y="464">Activity</text><text x="584" y="464">Participation</text>
+    </g>
+    <g font-size="19" fill="#087f79"><text x="64" y="249">모임</text><text x="584" y="249">모임별 회원</text><text x="64" y="494">모임별 활동</text><text x="584" y="494">신청과 출석을 함께 저장</text></g>
+    <g font-size="20" fill="#526771">
+      <text x="64" y="286">group_id · 모임명</text>
+      <text x="584" y="286">member_id · group_id</text><text x="584" y="319">이름 · 활동 상태</text>
+      <text x="64" y="531">activity_id · group_id</text><text x="64" y="565">활동명 · 일시 · 장소</text>
+      <text x="584" y="531">member_id · activity_id</text><text x="584" y="565">신청 상태 · 출석 상태</text>
+    </g>
+    <rect x="40" y="641" width="880" height="83" rx="12" fill="#173640"/>
+    <text x="64" y="675" font-size="21" font-weight="700" fill="#ffffff">같은 모임의 회원과 활동만 연결</text>
+    <text x="64" y="705" font-size="18" fill="#d4ebe7">중복 신청 방지: UNIQUE(member_id, activity_id) · 상세 제약조건은 다음 설계 단계에서 확정</text>
+  </g>
+</svg>

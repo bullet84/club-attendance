@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">신청 명단을 그대로 출석부로</title>
+  <desc id="desc">명단을 따로 정리하는 흐름과 제안하는 흐름을 비교한다. 활동 생성, 회원 직접 신청, 신청자 조회, 출석 처리까지 같은 참가 기록을 사용한다. 참가 기록 501의 출석 상태만 미확인에서 출석으로 바뀐다.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#6b7d85" stroke-width="1.5"/></marker></defs>
+  <rect width="960" height="640" rx="24" fill="#f5f8f8"/>
+  <g font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+    <text x="40" y="48" font-size="17" font-weight="700" fill="#087f79">01 / SERVICE FLOW</text>
+    <text x="40" y="94" font-size="32" font-weight="700" fill="#173640">신청 명단을 그대로 출석부로</text>
+    <text x="40" y="129" font-size="20" fill="#526771">신청 정보를 다시 옮기지 않고, 같은 기록에서 출석을 확인합니다.</text>
+    <text x="40" y="183" font-size="21" font-weight="700" fill="#526771">명단을 따로 정리하는 흐름</text>
+    <g fill="#ffffff" stroke="#d4dfe2" stroke-width="2">
+      <rect x="40" y="203" width="190" height="78" rx="12"/>
+      <rect x="270" y="203" width="190" height="78" rx="12"/>
+      <rect x="500" y="203" width="190" height="78" rx="12"/>
+      <rect x="730" y="203" width="190" height="78" rx="12"/>
+    </g>
+    <g font-size="23" fill="#354f59" text-anchor="middle">
+      <text x="135" y="251">참가 신청</text><text x="365" y="251">명단 다시 정리</text>
+      <text x="595" y="251">당일 출석 확인</text><text x="825" y="251">결과 별도 기록</text>
+    </g>
+    <g stroke="#6b7d85" stroke-width="2" marker-end="url(#arrow)"><path d="M239 242H257"/><path d="M469 242H487"/><path d="M699 242H717"/></g>
+    <text x="40" y="337" font-size="21" font-weight="700" fill="#087f79">제안하는 서비스 흐름</text>
+    <g fill="#e3f3ef" stroke="#8bc4ba" stroke-width="2">
+      <rect x="40" y="357" width="190" height="106" rx="12"/><rect x="270" y="357" width="190" height="106" rx="12"/>
+      <rect x="500" y="357" width="190" height="106" rx="12"/><rect x="730" y="357" width="190" height="106" rx="12"/>
+    </g>
+    <g text-anchor="middle">
+      <g font-size="17" fill="#39776d"><text x="135" y="389">운영진</text><text x="365" y="389">회원</text><text x="595" y="389">운영진</text><text x="825" y="389">운영진</text></g>
+      <g font-size="24" font-weight="700" fill="#173640"><text x="135" y="429">활동 생성</text><text x="365" y="429">직접 신청</text><text x="595" y="429">신청자 조회</text><text x="825" y="429">출석 처리</text></g>
+    </g>
+    <g stroke="#6b7d85" stroke-width="2" marker-end="url(#arrow)"><path d="M239 410H257"/><path d="M469 410H487"/><path d="M699 410H717"/></g>
+    <rect x="40" y="495" width="880" height="109" rx="14" fill="#173640"/>
+    <text x="64" y="530" font-size="18" fill="#b6ddd7">같은 Participation 기록 · 설명용 예시</text>
+    <text x="64" y="575" font-size="25" font-weight="700" fill="#ffffff">ID 501 유지</text>
+    <text x="305" y="575" font-size="25" fill="#ffffff">미확인 → 출석</text>
+    <text x="602" y="575" font-size="20" fill="#d4ebe7">신청 상태는 그대로</text>
+  </g>
+</svg>
