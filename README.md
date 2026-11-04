@@ -18,9 +18,11 @@
 
 ## 현재 상태
 
-2026년 11월 3일 기준, 독립 프로젝트 폴더와 첫 개발 기록을 작성하고 중간 발표 자료를 반영했습니다. 서비스 코드와 DB는 아직 구현하지 않았으며 실행 명령과 서비스 URL은 준비되는 대로 추가합니다.
+2026년 11월 4일 기준, 첫 개발 기록과 SVG 도식을 작성하고 GitHub Pages용 개발 블로그를 구성했습니다. 모임 관리 서비스 코드와 DB는 아직 구현하지 않았으며 서비스 실행 명령과 URL은 준비되는 대로 추가합니다.
 
 공개 저장소: [bullet84/club-attendance](https://github.com/bullet84/club-attendance)
+
+개발 블로그: [모임의 기록](https://bullet84.github.io/club-attendance/)
 
 Python Flask + SQLite를 초기 기술 후보로 검토하고 있습니다. 기술 선택, 회원 식별·모임별 운영진 권한, DB 제약조건은 구현 전에 구체화합니다.
 
@@ -29,7 +31,36 @@ Python Flask + SQLite를 초기 기술 후보로 검토하고 있습니다. 기�
 - [개발 기록 전체 목차](docs/index.md)
 - [1편. 참가 신청 명단을 그대로 출석부로 사용할 수 없을까?](docs/01-topic-proposal.md)
 
-이후 DB 설계, 첫 배포, 최종 회고를 실제 진행 상황에 맞춰 기록합니다. GitHub Pages를 이용한 블로그 공개는 추후 설정할 예정입니다.
+이후 DB 설계, 첫 서비스 배포, 최종 회고를 실제 진행 상황에 맞춰 기록합니다. GitHub Pages에는 개발 기록을 게시하며, 실제 모임 관리 서비스는 별도로 구현·배포합니다.
+
+## 블로그 수정과 배포
+
+`docs/*.md` 원문을 수정하고 `main`에 푸시하면 GitHub Actions가 HTML을 생성해 GitHub Pages에 배포합니다.
+
+| 파일 | 역할 |
+|---|---|
+| `docs/01-topic-proposal.md` | 첫 블로그 원문 |
+| `docs/assets/*.svg` | 본문 도식 |
+| `site/config.json` | 사이트 이름과 글 목록·날짜·요약 |
+| `site/templates/` | 홈과 본문 HTML 틀 |
+| `site/assets/site.css` | 색상·레이아웃·모바일 스타일 |
+| `scripts/build_site.py` | Markdown을 HTML로 변환 |
+| `scripts/check_site.py` | 생성된 페이지의 내부 링크·이미지·목차 검사 |
+| `.github/workflows/pages.yml` | 자동 빌드·검사·배포 |
+
+새 글은 `docs/`에 작성하고 `site/config.json`에 제목·파일명·날짜·요약을 등록합니다. 미리 등록한 2~4편은 원문 파일이 생기면 공개 글로 전환됩니다. 게시할 때 예정 제목·요약을 실제 내용으로 바꾸고 날짜도 입력합니다. GitHub 문서 목차인 `docs/index.md`도 함께 갱신합니다.
+
+### 로컬 미리보기 — Windows PowerShell
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-site.txt
+.\.venv\Scripts\python.exe scripts/build_site.py
+.\.venv\Scripts\python.exe scripts/check_site.py
+.\.venv\Scripts\python.exe -m http.server 8765 --bind 127.0.0.1 --directory _site
+```
+
+브라우저에서 `http://127.0.0.1:8765/`를 엽니다. 수정 후 빌드 명령을 다시 실행하고 새로고침하면 됩니다. 생성된 `_site/`와 `.venv/`는 Git에 올리지 않습니다. 배포 진행 상태는 저장소의 **Actions → Publish development journal**에서 확인합니다.
 
 ## 진행 원칙
 

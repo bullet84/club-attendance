@@ -6,6 +6,7 @@ __pycache__/
 .pytest_cache/
 .coverage
 htmlcov/
+_site/
 
 # Local configuration and application data
 .env

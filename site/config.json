@@ -1,0 +1,37 @@
+{
+  "title": "모임의 기록",
+  "description": "참가 신청부터 출석까지, 하나의 흐름을 만드는 개발 기록.",
+  "author": "이수인",
+  "url": "https://bullet84.github.io/club-attendance",
+  "repository": "https://github.com/bullet84/club-attendance",
+  "posts": [
+    {
+      "source": "01-topic-proposal.md",
+      "category": "기획 · 문제 정의",
+      "title": "참가 신청 명단을 그대로 출석부로 사용할 수 없을까?",
+      "summary": "동아리 운영에서 발견한 불편을 다섯 가지 핵심 기능과 데이터 설계, 이용자 평가 계획으로 정리했습니다.",
+      "date": "2026-11-03"
+    },
+    {
+      "source": "02-database-design.md",
+      "category": "설계 · 데이터베이스",
+      "title": "모임, 회원, 활동을 어떻게 연결할까?",
+      "summary": "네 테이블의 관계와 중복 신청을 막는 규칙을 구체화할 예정입니다.",
+      "date": null
+    },
+    {
+      "source": "03-first-deployment.md",
+      "category": "개발 · 첫 배포",
+      "title": "실제로 접속할 수 있는 서비스로",
+      "summary": "서비스 구현 현황과 첫 배포 과정, 오류 해결 경험을 기록할 예정입니다.",
+      "date": null
+    },
+    {
+      "source": "04-retrospective.md",
+      "category": "평가 · 회고",
+      "title": "실제 모임에서 사용한 뒤에",
+      "summary": "운영진의 평가와 개선 사항, 이번 프로젝트에서 배운 점을 정리할 예정입니다.",
+      "date": null
+    }
+  ]
+}

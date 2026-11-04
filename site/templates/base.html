@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="$description">
+  <meta name="theme-color" content="#164e48">
+  <meta property="og:type" content="$og_type">
+  <meta property="og:title" content="$page_title">
+  <meta property="og:description" content="$description">
+  <meta property="og:url" content="$canonical">
+  <title>$page_title</title>
+  <link rel="canonical" href="$canonical">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="$body_class">
+  <a class="skip-link" href="#main">본문으로 이동</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./" aria-label="모임의 기록 홈"><span class="brand-icon" aria-hidden="true">m.</span><span>모임의 기록</span></a>
+      <nav aria-label="주 메뉴">
+        <a href="./#journal">개발 기록</a>
+        <a href="./#about">프로젝트 소개</a>
+        <a class="repo-link" href="$repository">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  $content
+  <footer class="site-footer">
+    <div><a class="footer-brand" href="./">모임의 기록</a><p>신청과 출석을 연결하는 작은 서비스의 개발 노트.</p></div>
+    <div class="footer-meta"><span>2026 · $author · 소프트웨어공학</span><a href="$repository">코드와 변경 기록 보기 ↗</a></div>
+  </footer>
+</body>
+</html>
